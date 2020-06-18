@@ -1,35 +1,82 @@
 <!doctype html>
 <html>
   <head>
-    <title>Example of the Authorization Code flow with Spotify</title>
+    <title>Music Taste</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <style type="text/css">
-      #login, #loggedin {
-        display: none;
-      }
       .text-overflow {
         overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 500px;
+      }
+      .auth h1{
+        position: absolute;
+        top: 37%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 50px;
+        font-family: 'Press Start 2P';
+        color: white;
+      }
+
+      .side{
+        height: 100%; /* full height */
+        width: 50%; /* width */
+        position: fixed; /* fixed side*/
+        z-index: 0; /* top */
+        top: 0; /* top */
+        left: 0;
+        background-color:#8699D5;
+      }
+
+      .auth a{
+        position: absolute;
+        font-family: 'Source Code Pro', monospace;
+        top: 50%;
+        right: 37%;
+        padding: 6px 16px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #0E1428;
+        border: 2px solid white;
+        background-color: white;
+        transition: 0.3s;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .auth a:hover{
+        border: 2px solid white;
+        color: white;
+        background-color:#0A101F;
+        transition: .5s ease;
+        display: inline;
+      }
+
+      body{
+        background-color: #0E1428;
+      }
+
+      
+
+      .btn-main{
+
       }
     </style>
   </head>
 
   <body>
+    <div class="side">
+    </div>
     <div class="container">
       <div id="login">
-        <h1>This is an example of the Authorization Code flow</h1>
-        <a href="/login" class="btn btn-primary">Log in with Spotify</a>
+        <div class="auth">
+        <h1>Music Taste</h1>
+        <a href="/login" class="btn-main">Log in with Spotify</a>
       </div>
-      <div id="loggedin">
-        <div id="user-profile">
-        </div>
-        <div id="oauth">
-        </div>
-        <button class="btn btn-default" id="obtain-new-token">Obtain new token using the refresh token</button>
       </div>
-    </div>
+    
 
     <script id="user-profile-template" type="text/x-handlebars-template">
       <h1>Logged in as {{display_name}}</h1>

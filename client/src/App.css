@@ -1,33 +1,142 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
 
 div, button {
   margin: 10px;
+}
+
+.header{
+  background-color:#212f5e;
+  width: auto;
+  height: 100%;
+  padding: 60px;
+  text-align: center;
+  
+}
+
+/* .footer{
+  background-color:#212f5e;
+  width: auto;
+  height: 5%;
+  padding: 40px;
+  text-align: center;
+} */
+
+body{
+  margin: 0;
+  background-color: #0E1428;
+}
+
+*{
+  padding:0;
+  margin:0;
+}
+
+.header .stats{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 35px;
+  font-family: 'Press Start 2P';
+  color: white;
+  background-color: #0E1428;
+  border: 2px solid white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.header .stats:hover{
+  transition: .5s ease;
+  color: #0E1428;
+  border: 2px solid white;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 35px;
+  font-family: 'Press Start 2P';
+}
+
+.user-name{
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.top-track{
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+  text-align: center;
+  top: 70%;
+  font-size: 25px;
+}
+
+.top-artist{
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+  text-align: center;
+  top: 80%;
+  font-size: 25px;
+}
+
+.taste{
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  top: 90%;
+}
+
+.user-photo{
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 16px;
+  border-radius: 100%;
+}
+
+.footer .get-taste{
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 10px;
+  font-family: 'Press Start 2P';
+  color: white;
+  background-color: #0E1428;
+  border: 2px solid white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.footer .get-taste:hover{
+  transition: .5s ease;
+  color: #0E1428;
+  border: 2px solid white;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 10px;
+  font-family: 'Press Start 2P';
 }
